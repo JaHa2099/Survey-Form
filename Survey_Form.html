@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Title</h1>
+    <p id="description">Description</p>
+    <form id="survey-form">
+
+      <fieldset>  
+        <legend>Personal Details:</legend>
+        <label id="name-label">Name</label>
+        <input type="text" id="name" name="name" required placeholder="name">
+        <label id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="email">
+        <label id="number-label">Age</label>
+        <input type="number" id="number" min="5" max="20" placeholder="number">
+      </fieldset>
+
+      <fieldset>
+        <legend>Dropdown question</legend>
+        <select id="dropdown">
+          <option>One</option>
+          <option>Two</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>radio question</legend>
+        <input id="yes-option" type="radio" value="yes" name="optionradio" />
+        <label for="yes-option">Yes</label>
+        <input id="no-option" type="radio" value="no" name="optionradio" />
+        <label for="no-option">No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>checkbox question</legend>
+          <input type="checkbox" id="one" name="one" value="one" />
+          <label for="one">One</label>
+          <input type="checkbox" id="two" name="two" value="two" />
+          <label for="two">Two</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>textarea question</legend>
+        <textarea cols="20" rows="4" placeholder="Questions?"></textarea>
+        <textarea cols="20" rows="4" placeholder="Opinions"></textarea>
+      </fieldset>
+
+      <button type="submit" id="submit">Submit</button>
+
+
+    </form>
+  </body>
+</html>
+
